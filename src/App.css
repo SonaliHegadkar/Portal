@@ -1,0 +1,110 @@
+General Layout
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  /* Filters Section Styling */
+/* Filters Section Styling */
+.filters {
+    background-color: #f9f9f9;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+  
+  .filters h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px; /* Spacing between each filter section */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between label and button */
+  }
+  
+  .filter-section label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    flex: 1; /* Take available space */
+  }
+  
+  .filter-section input[type="text"] {
+    margin-top: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .filter-section button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 8px; /* Add spacing between label and button */
+  }
+  
+  .filter-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Hover effect for filter sections */
+  .filter-section:hover {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Job Listing Header */
+  .job-listing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Job Cards Container with Scrollbar */
+  .job-cards-container {
+    max-height: 400px; /* Adjust height for the scrollbar */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 8px;
+  }
+  
+  .job-cards-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .job-cards-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .job-cards-container::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+  }
+  
+  /* Quick Job Search Tags */
+  .quick-search .tags span {
+    display: inline-block;
+    margin: 4px;
+    padding: 8px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  

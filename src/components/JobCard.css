@@ -1,0 +1,55 @@
+.job-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-mode {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.job-mode.in-office {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.job-mode.remote {
+  background-color: #cff4fc;
+  color: #055160;
+}
+
+.job-details span {
+  margin-right: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+button {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

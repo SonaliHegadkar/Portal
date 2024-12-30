@@ -1,0 +1,245 @@
+/* General Layout */
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .responsive-filters {
+    flex: 0 1 180px; /* Reduced width */
+    position: relative;
+  }
+  
+  .filters,
+  .quick-search {
+    background-color: #f8f8f8;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 1 180px; /* Adjust width as needed */
+  }
+  
+  .filters.closed {
+    display: none; /* Hide filters when closed on mobile */
+  }
+  
+  .filters.open {
+    display: block;
+  }
+  
+  .filters h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .filter-section {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* To position the button */
+  }
+  
+  .filter-section label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    flex: 1;
+  }
+  
+  .filter-section input[type="text"] {
+    margin-top: 6px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 100%;
+  }
+  
+  .filter-section button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Keeps the button in place */
+    right: 0; /* Aligns button to the right */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .filter-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 6px;
+    padding-left: 24px; /* Prevents overlap with the button */
+  }
+  
+  .checkbox-group label {
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    accent-color: #007bff;
+  }
+  
+  /* Job Listing Section Styling */
+  .job-listing {
+    flex: 3 1 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-listing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .job-listing-header label {
+    margin-right: 8px;
+  }
+  
+  .job-cards-container {
+    max-height: 400px; /* Adjust height for the scrollbar */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 8px;
+    display: flex;
+    flex-direction: column; /* Stack JobCards vertically */
+    gap: 16px; /* Space between JobCards */
+  }
+  
+  .job-cards-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .job-cards-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .job-cards-container::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+  }
+  
+  /* Quick Job Search Section Styling */
+  .quick-search {
+    flex: 0 1 180px; /* Reduced width */
+    background-color: #f8f8f8;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quick-search h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag {
+    cursor: pointer;
+    padding: 6px 10px;
+    margin: 4px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .tag.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .tag:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .app-container {
+      flex-direction: column;
+    }
+  
+    .responsive-filters {
+      width: 100%;
+    }
+  
+    .filters,
+    .quick-search {
+      flex: 1 1 100%;
+      width: 100%;
+    }
+  
+    .filter-toggle {
+      display: block;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+  
+    .filters.closed {
+      display: none;
+    }
+  
+    .filters.open {
+      display: block;
+    }
+  
+    .filters {
+      position: relative;
+    }
+  
+    .checkbox-group {
+      padding-left: 0;
+    }
+  
+    .filter-section {
+      position: relative;
+      justify-content: flex-start;
+    }
+  
+    .filter-section button {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  

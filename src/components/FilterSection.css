@@ -1,0 +1,35 @@
+/* Filter Section Styles */
+.filter-section {
+    background-color: #f3f4f6; /* Light grey background */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .filter-section h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .filter-input {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  
+  .filter-checkbox {
+    margin-bottom: 1rem;
+  }
+  
+  .filter-checkbox label {
+    display: block;
+    font-size: 0.875rem;
+    color: #000;
+  }
+  
+  .filter-checkbox input {
+    margin-right: 0.5rem;
+  }
+  
